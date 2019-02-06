@@ -40,6 +40,7 @@ final class Service
      * @var bool
      */
     private $telematici;
+    public $response = null;
 
     /**
      * Telematici constructor.
@@ -175,6 +176,11 @@ final class Service
                             $find = 1;
 
                             /**
+                             * Store data in a Var
+                             */
+                            $this->response = $doc->getElementById('vcfcontenitore')->textContent;
+
+                            /**
                              * Fiscal Found
                              */
                             return true;
@@ -300,6 +306,11 @@ final class Service
                             $find = 1;
 
                             /**
+                             * Store data in a Var
+                             */
+                            $this->response = $doc->getElementById('vcfcontenitore')->textContent;
+
+                            /**
                              * Vat Number Found
                              */
                             return true;
@@ -318,4 +329,20 @@ final class Service
         }
 
     }
+
+    /**
+     * @return null
+     * @throws \Exception
+     */
+    public final function response()
+    {
+
+        if (is_null($this->response)) {
+            throw  new \Exception("The response parse null");
+        } else {
+            return $this->response;
+        }
+
+    }
+
 }
