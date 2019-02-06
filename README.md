@@ -9,7 +9,14 @@ PHP 7.2      | In Dev  | Composer
 
 ` composer require ethical/telematici-php`
 
-> Start Appliance Object:
+> Authenticating to a Cloud API Service
+
+To allow your application code to use a Cloud API, 
+you will need to set up the proper credentials for your application 
+to authenticate its identity to the service and to obtain authorization
+to perform tasks. (See [Generate Api Key File](https://www.agenziaentrate.gov.it/wps/portal/entrate/servizi))
+
+> Start Ethical Object:
 
 ```
 $telematici = new Ethical\Telematici\Service('path/to/serviceaccountkey/project-name.json');
