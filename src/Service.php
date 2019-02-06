@@ -34,7 +34,7 @@ use Monolog\Logger;
  * Class Telematici
  * @package Ethical\Telematici
  */
-final class Telematici
+final class Service
 {
     /**
      * @var bool

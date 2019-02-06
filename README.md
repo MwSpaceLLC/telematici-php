@@ -7,30 +7,37 @@ PHP 7.2      | In Dev  | Composer
 
 > Install Library:
 
-`composer require e/namirial-php`
-
-
 > Start Appliance Object:
 
 ```
-$namirial = new Appliance\Namirial\Service('ip address of sws');
+$telematici = new Ethical\Telematici\Service('path/to/serviceaccountkey/project-name.json');
 ```
-💻 The class will connect via http protocol to your Web Service and load the functions from the WSDL
-> Sign File (CAdES,XAdES,PAdES)
+💻 The class will connect via api to Google Cloud Api Vision Services (environment variables)
+> Check Valid Fiscal Code Exist
 
 ```
-$namirial->sign('path/to/file/ALB1666197.xml'); 
+if($telematici->validCF('FISCALCODE'))
+{
+    // Fiscal Code Valid !
+} else {
+    // Fiscal Code Not Valid
+}
 ```
-🚀 The appliance will discover the file format automatically by choosing the most appropriate format for you 
+🚀 The system checks the tax code by confirming the captcha through Api Vision
 
-> Verify File (CAdES,XAdES,PAdES)
+> Check Valid Vat Number
 ```
-$namirial->verify('path/to/file/ALB1666197.p7m'); 
+if($telematici->validPIVA('VATNUMBER'))
+{
+    // Vat Number Valid !
+} else {
+    // Vat Number Not Valid
+}
 ```
-🎂 The appliance will verify the signature of the file if it is trusted or not
+🎂 The system checks the vat number by confirming the captcha through Api Vision
 
-> Save File (CAdES,XAdES,PAdES)
-```
-$namirial->save('path/to/file/ALB1666197_signed.xml'); 
-```
-👻 The appliance will save the file in a directory by creating it if necessary
+##Veary Important For Use
+
+👻 This script is for TEST purposes only. It's exclusively for testing the power of Google Cloud Api Vision
+* YOU CAN NOT USE IT FOR COMMERCIAL PURPOSES
+* IT IS NOT A LEGAL SCRIPT
