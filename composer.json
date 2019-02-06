@@ -1,0 +1,24 @@
+{
+  "name": "appliance/namirial-php",
+  "description": "A PHP package for work with agencyentrate.gov.it services",
+  "autoload": {
+    "psr-4": {
+      "Ethical\\Telematici\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksandr Ivanovitch",
+      "email": "alex@mwspace.com",
+      "homepage": "https://mwspace.com",
+      "role": "CTO"
+    }
+  ],
+  "require": {
+    "google/cloud-vision": "*",
+    "symfony/monolog-bundle": "*",
+    "guzzlehttp/guzzle": "*",
+    "php": "^7.1"
+  }
+}
