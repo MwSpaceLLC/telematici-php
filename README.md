@@ -7,6 +7,8 @@ PHP 7.2      | In Dev  | Composer
 
 > Install Library:
 
+` composer require ethical/telematici-php`
+
 > Start Appliance Object:
 
 ```
