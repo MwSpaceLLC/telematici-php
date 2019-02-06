@@ -63,7 +63,7 @@ The cycles are saved via LOG and this can also last 8/9 seconds and generate abo
 
 Read the costs carefully: [Api Vision Pricing](https://cloud.google.com/vision/pricing?hl=it)
 
-#Veary Important For Use
+## Veary Important For Use
 
 👻 This script is for TEST purposes only. It's exclusively for testing the power of Google Cloud Api Vision
 * YOU CAN NOT USE IT FOR COMMERCIAL PURPOSES
