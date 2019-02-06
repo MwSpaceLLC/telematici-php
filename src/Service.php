@@ -122,7 +122,7 @@ final class Service
             /**
              * Increase Log Cycles
              */
-            $log = new Logger('cycleOfVisionRequestForVat');
+            $log = new Logger('cycleOfVisionRequestForCf');
             $log->info('+1');
 
             # print out detailed and structured information about document text

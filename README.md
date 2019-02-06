@@ -38,6 +38,18 @@ if($telematici->validPIVA('VATNUMBER'))
 ```
 🎂 The system checks the vat number by confirming the captcha through Api Vision
 
+> Work With Cycles And Log
+```
+$log->info('+1');
+```
+🎂 How does the script work?
+
+Simple, the script tries to read the contents of the captcha until it finds a string, then passes the string to the captcha, if it fails it runs the loop again.
+
+The cycles are saved via LOG and this can also last 8/9 seconds and generate about 20/30 calls Api Vision to be able to find a match.
+
+Read the costs carefully: [Api Vision Pricing](https://cloud.google.com/vision/pricing?hl=it)
+
 ##Veary Important For Use
 
 👻 This script is for TEST purposes only. It's exclusively for testing the power of Google Cloud Api Vision
