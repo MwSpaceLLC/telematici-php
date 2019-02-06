@@ -9,6 +9,12 @@ PHP 7.2      | In Dev  | Composer
 
 ` composer require ethical/telematici-php`
 
+> Access Google Cloud Console & Enable API
+
+Integrates Google Vision features, including image labeling, face, logo,
+and landmark detection, optical character recognition (OCR), and detection
+of explicit content, into applications. (See [Enable Cloud Vision API](https://console.cloud.google.com/apis/library/vision.googleapis.com?q=vision&id=957e5f12-b03d-4788-9f56-bcdd4dd51f5a&project=resolute-cat-230917))
+
 > Authenticating to a Cloud API Service
 
 To allow your application code to use a Cloud API, 
