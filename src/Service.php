@@ -274,7 +274,7 @@ final class Service
                          */
                         $response = $client->request('POST', 'VerificaPIVA/VerificaPiva.do', array(
                             'form_params' => array(
-                                'piva' => $this->request->pi,
+                                'piva' => $vatnumber,
                                 'inCaptchaChars' => $captcha
                             )
                         ));
