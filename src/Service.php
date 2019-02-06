@@ -177,7 +177,7 @@ final class Service
                             /**
                              * Fiscal Found
                              */
-                            return false;
+                            return true;
                         }
                     }
                 }
@@ -300,7 +300,7 @@ final class Service
                             $find = 1;
 
                             /**
-                             * Vat Number Not Found
+                             * Vat Number Found
                              */
                             return true;
 
