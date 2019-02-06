@@ -1,5 +1,5 @@
 {
-  "name": "appliance/namirial-php",
+  "name": "ethical/telematici-php",
   "description": "A PHP package for work with agencyentrate.gov.it services",
   "autoload": {
     "psr-4": {
