@@ -42,7 +42,7 @@ if($telematici->validPIVA('VATNUMBER'))
 ```
 $log->info('+1');
 ```
-🎂 How does the script work?
+👤 How does the script work?
 
 Simple, the script tries to read the contents of the captcha until it finds a string, then passes the string to the captcha, if it fails it runs the loop again.
 
