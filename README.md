@@ -51,6 +51,20 @@ if($telematici->validPIVA('VATNUMBER'))
 ```
 🎂 The system checks the vat number by confirming the captcha through Api Vision
 
+> Return Data Response
+```
+if($telematici->validPIVA('VATNUMBER'))
+{
+    echo $telematici->response();
+}
+
+if($telematici->validCF('FISCALCODE'))
+{
+    echo $telematici->response();
+}
+```
+👌 This method return a response data of result (beta)
+
 > Work With Cycles And Log
 ```
 $log->info('+1');
