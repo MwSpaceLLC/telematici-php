@@ -3,7 +3,7 @@
 
 PHP Version  | Status  | Require
 ------------ | ------  | -------
-PHP 7.2      | In Dev  | Composer
+PHP 7.2      | Beta  | Composer
 
 > Install Library:
 
